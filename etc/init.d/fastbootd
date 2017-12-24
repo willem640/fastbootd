@@ -12,7 +12,7 @@ start() {
         exec 2>/dev/null
         (
         trap "" TERM
-        /usr/bin/fastbootd $FILE
+        /usr/local/bin/fastbootd $FILE
         ) &        
         #setsid "/usr/bin/fastbootd $FILE" >/dev/null 2>&1 < /dev/null &
         # commands to launch application
